@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharr Mount</title>
+    <link rel="stylesheet" href="indexCSS/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href = "img/20200310_124411.jpg" type = "image/x-icon"> 
+</head>
+<body>
+    <nav class="top_header">
+        <div class="left-side">
+            <div class="f-l-itame">
+                <a>
+                    <i class="fa fa-phone"></i>
+                    +383(0)44xxxxxx
+                </a>
+            </div>
+            <span>|</span>
+            <div class="s-l-itame">
+                <a>
+                    <i class="fa fa-envelope"></i>
+                    info@sharrmount.com
+                </a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="f-r-itame"></div>
+            <div class="s-r-itame">
+                <div class="social-itame">
+                    <a href="https://www.facebook.com/sharrmount/">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sharrmount/">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <span>|</span>
+                    <button class="btnlogin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                        <i class="fa fa-user-times"></i>
+                    </button>
+                </div>
+                <div  id="id01" class="modal">
+                  <div class="form">
+                    <form class="modal-content animate " method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01') .style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="img/20200310_124411.jpg"  alt="Avatar" class="avatar" >
+                      </div>
+                      <div class="container">
+                        <div class="uname">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                        </div>
+                        <div class="pass">
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                        </div>
+                        <button id="btnlogin" type="submit">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                      <div  class="containerbuttom" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <p class="message">Not Registered? <a href="#">Register</a></p>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                    <form class="modal-content animate register-form" method="post">
+                        <div class="container">
+                          <div class="uname">
+                              <label for="uname"><b>Username</b></label>
+                              <input type="text" placeholder="Enter Username" name="uname" required>
+                          </div>
+                          <div class="email">
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" placeholder="Enter Email" name="Email" required>
+                        </div>
+                          <div class="pass">
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" name="psw" required>
+                          </div>
+                          <button id="btncreate" type="submit">Create</button>
+                        </div>
+                        <div  class="containerbuttom" style="background-color:#f1f1f1">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          <p class="message">Already Registread?<br><a href="#">Login</a></p>
+                        </div>
+                      </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="logo">
+            <a href="">
+                <img src="img/20200310_124411.jpg" alt="Sharr Mount logo" >
+            </a>
+        </div>
+        
+        <div class="menu">
+            <button onclick="location.href='index.html'">Home</button>
+            
+            <button onclick="location.href='restourant.html'">Restourant</button>
+            <div class="dropdown">
+                <button class="dropbtn">Cottage-Tents</button>
+                <div class="dropdown-content">
+                  <a href="location.href='cottage.html'">Cottage</a>
+                  <a href="location.href='tends.html'">Tents</a>
+                </div>
+              </div>
+            <button onclick="location.href='gallery.html'">Gallery</button>
+            <button onclick="location.href='about.html'"> About</button>
+            <button><a href=" location.href='contact.html' ">Contact  </a></button>
+        </div>
+        
+    </header>
+
+     <!--Main form-->
+    <main>
+        <div class="rezervationform">
+            <form  methode="post">
+                <div class="textrow">
+                    <label for="Name">Name</label>
+                    <label for="Number">Phone Number</label>
+                    <label for="Email">Email</label>
+                    <label for="check-in">Check-in</label>
+                    <label for="check-out">Check-out</label>
+                    <label for="guest">Guest</label>
+                </div>
+               <div class="boxrow">
+                    <input type="text" name="Name" placeholder="Enter your Name" required>
+                    <input type="number" name="Phone Number" placeholder="Eneter your Phone Number" required>
+                    <input type="email" name="Email" placeholder="Enter your Email"  required> 
+                    <input type="date" name="Check-in"  id="datepicker" required>
+                    <input type="date" name="Check-out" id="datepicker" required>
+                    <input type="number" name="guest" placeholder="Guest" max="6" min="1" required>
+                    <button id="btnrzv">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="slider">
+            <div class="foto" id="foto">
+                <img src="img/20200408_111013.jpg" alt="" width="100%" height="450" >
+            </div>
+        </div>
+        
+        
+        <!-- Cottage -->
+        <div class="cottageTents" >
+            <hr> 
+                <a href="C:\Users\DELL\OneDrive\Desktop\Projekti\Sharr mount\Cottage-Tends\Cottage\Cottage.html"> Cottage </a>
+            <hr>
+        </div>
+    
+        <div class="boxes">
+            <div class="Cottage">
+                <div class="frist-box" id="fristbox">
+                    <img src="img/d.jpg" alt="Villa">
+                </div>
+                <div class="tabelcottage">
+                    <h3>Villa ne Restourant Sharr Mount</h3>
+                    <table class="tabelvilla ">
+                        <tr>
+                            <th> <i class="fa fa-check-circle"></i> Mëngjes</th>
+                            <th class="rr">  <i class="fa fa-check-circle"></i>Wi-Fi free</th>
+                        </tr>
+                        <tr>
+                            <th> <i class="fa fa-check-circle"></i>Ballkon Privat</th>
+                            <th  class="rr"> <i class="fa fa-check-circle"></i>Banjo Private</th>
+                        </tr>
+                        <tr>
+                            <th> <i class="fa fa-check-circle"></i>Minibar</th>
+                            <th  class="rr"> <i class="fa fa-check-circle"></i>Tavolina afer Lumit</th>
+                        </tr>
+                        <tr>
+                            <th> <i class="fa fa-check-circle"></i>Tharëse Flokesh</th>
+                            <th  class="rr"> <i class="fa fa-check-circle"></i>hekur (per hekurosje)</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <!--Tents-->
+            <div class="cottageTents" >
+                <hr> 
+                    <a href="C:\Users\DELL\OneDrive\Desktop\Projekti\Sharr mount\Cottage-Tends\Tends\Tends.html">Tents</a> 
+                <hr>
+            </div>
+
+            <div class="second-box" id="secondbox">
+                <img src="img/4a.jpg" alt="Oda">
+            </div>
+            
+            <!--Gallery-->
+            <div class="cottageTents" >
+                <hr> 
+                    <a href="C:\Users\DELL\OneDrive\Desktop\Projekti\Sharr mount\Gallery\Gallery.html">Gallery</a> 
+                <hr>
+            </div>
+
+            <div class="third-box" id="thirdbox">
+                <img src="img/4b.jpg" alt="">
+                <img src="img/3b.jpg" alt="">
+                <img src="img/2b.jpg" alt="">
+            </div>
+            
+            
+        </div>
+    </main>
+
+    <!--Footer main-->
+    <footer>
+        <div class="f-box">
+            <img src="img/20200310_124411.jpg" alt="Sharr Mount icone" width="60px" height="50px">
+            <div class="links">
+                <a href="#">Home</a>
+                <span>•</span>
+                <a href="">Restourant</a>
+                <span>•</span>
+                <a href="">Cottage</a>
+                <span>•</span>
+                <a href="">Tents</a>
+                <span>•</span>
+                <br>
+                <a href="">Gallery</a>
+                <span>•</span> 
+                <a href="">About</a>
+                <span>•</span>
+                <a href="">Contact</a>
+            </div>
+        </div>
+        <div class="s-box">
+            <h4>Contact</h4>
+            <p>
+                <i class="fa fa-map-marker"></i>
+                Prizren-Prevallë
+                km 18
+            </p>
+            <p>
+                <i class="fa fa-phone"></i>
+                +383(0)44xxxxxx
+            </p>
+            <p>
+                <i class="fa fa-envelope" ></i>
+                info@sharrmount.com
+            </p>
+        </div>
+        <div class="t-box">
+            <h4>About Restourat Sharr Mount</h4>
+            <p>Restourant "Sharr Mount", ne nje lartesi prej rreth 1.100 m <br> (lartesi mbidetare), e cila preferohet per relaks, <br> afer lumit,me një ambient familjar dhe tejet komod, <br> me ushqime inovative të kuzhinës tradicionale shqiptare.... </p>
+        </div>
+    </footer>
+    <nav class="bottom-footer">
+        <p>Copyright &copy; 2020 Restourant Sharr Mount All Rights Reserved </p>
+    </nav>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"> </script>
+    <script src="js/script.js"> </script>
+    <script src="js/topslider.js"></script>
+    <script src="js/odaslider.js"></script>
+    <script src="js/galleryslider.js"></script>
+    <script>
+        document.getElementById('button1').onclick = function(){
+            windiw.location.href ="\\Sharr Mount\\About\\Index.html"
+        }
+
+    </script>       
+
+</body>
+</html>
